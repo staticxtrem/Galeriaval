@@ -3,114 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    #flip-book-container {
-      width: 80vw; /* Utilizando porcentaje para ser responsive */
-      max-width: 500px; /* Ancho máximo para evitar que crezca demasiado en pantallas grandes */
-      height: 60vh; /* Utilizando porcentaje para ser responsive */
-      max-height: 800px; /* Altura máxima para evitar que crezca demasiado en pantallas grandes */
-    }
-
-    #flip-book {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    .page {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background-color: #333;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      opacity: 0;
-      transition: opacity 1s;
-    }
-
-    .page img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Ajusta el tamaño de la imagen manteniendo la proporción y cubriendo completamente el contenedor */
-    }
-
-    /* Media queries para dispositivos móviles */
-    @media (max-width: 768px) {
-      #flip-book-container {
-        width: 90vw;
-        max-width: none;
-        height: 70vh;
-        max-height: none;
-      }
-    }
-  </style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Infinity Shop</title>
 </head>
 <body>
-
-
-<div id="flip-book-container">
-  <div id="flip-book">
-    <div class="page"><img src="imagenes/1.jpeg" alt="Page 1"></div>
-    <div class="page"><img src="imagenes/2.jpeg" alt="Page 2"></div>
-    <div class="page"><img src="imagenes/3.jpeg" alt="Page 3"></div>
-    <div class="page"><img src="imagenes/4.jpeg" alt="Page 4"></div>
-    <div class="page"><img src="imagenes/5.jpeg" alt="Page 5"></div>
-    <div class="page"><img src="imagenes/6.jpeg" alt="Page 6"></div>
-    <div class="page"><img src="imagenes/7.jpeg" alt="Page 7"></div>
-    <div class="page"><img src="imagenes/8.jpeg" alt="Page 8"></div>
-    <div class="page"><img src="imagenes/9.jpeg" alt="Page 9"></div>
-    <div class="page"><img src="imagenes/10.jpeg" alt="Page 10"></div>
-    <div class="page"><img src="imagenes/11.jpeg" alt="Page 11"></div>
-    <div class="page"><img src="imagenes/12.jpeg" alt="Page 12"></div>
-    <div class="page"><img src="imagenes/13.jpeg" alt="Page 13"></div>
-    <div class="page"><img src="imagenes/14.jpeg" alt="Page 14"></div>
-    <div class="page"><img src="imagenes/15.jpeg" alt="Page 15"></div>
-    <div class="page"><img src="imagenes/16.jpeg" alt="Page 16"></div>
-    <div class="page"><img src="imagenes/17.jpeg" alt="Page 17"></div>
-    <div class="page"><img src="imagenes/18.jpeg" alt="Page 18"></div>
-    <div class="page"><img src="imagenes/19.jpeg" alt="Page 19"></div>
-    <div class="page"><img src="imagenes/20.jpeg" alt="Page 20"></div>
-    <div class="page"><img src="imagenes/21.jpeg" alt="Page 21"></div>
-    <div class="page"><img src="imagenes/22.jpeg" alt="Page 22"></div>
-    <div class="page"><img src="imagenes/23.jpeg" alt="Page 23"></div>
-    <div class="page"><img src="imagenes/24.jpeg" alt="Page 24"></div>
-    <div class="page"><img src="imagenes/25.jpeg" alt="Page 25"></div>
-    <div class="page"><img src="imagenes/26.jpeg" alt="Page 26"></div>
-    <div class="page"><img src="imagenes/27.jpeg" alt="Page 27"></div>
-    <div class="page"><img src="imagenes/28.jpeg" alt="Page 28"></div>
-    <div class="page"><img src="imagenes/29.jpeg" alt="Page 29"></div>
-    <div class="page"><img src="imagenes/30.jpeg" alt="Page 30"></div>
-    <div class="page"><img src="imagenes/31.jpeg" alt="Page 31"></div>
-    <div class="page"><img src="imagenes/32.jpeg" alt="Page 32"></div>
-    <div class="page"><img src="imagenes/33.jpeg" alt="Page 33"></div>
-    <!-- Agrega más páginas según sea necesario -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Infinity Shop</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="variedades.html">Variedades</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div id="carouselExample" class="carousel slide">
+  < class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenes/1.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/2.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/3.jpeg" class="d-block w-100" alt="...">
+    </div>
+  <div class="carousel-item">
+      <img src="imagenes/4.jpeg" class="d-block w-100" alt="...">
+    </div>
+  <div class="carousel-item">
+      <img src="imagenes/5.jpeg" class="d-block w-100" alt="...">
+    </div>
+  <div class="carousel-item">
+      <img src="imagenes/6.jpeg" class="d-block w-100" alt="...">
+    </div>
+  <div class="carousel-item">
+      <img src="imagenes/7.jpeg" class="d-block w-100" alt="...">
+    </div>
+  <div class="carousel-item">
+      <img src="imagenes/8.jpeg" class="d-block w-100" alt="...">
+    </div>
+  <div class="carousel-item">
+      <img src="imagenes/9.jpeg" class="d-block w-100" alt="...">
+    </div>
+  <div class="carousel-item">
+      <img src="imagenes/10.jpeg" class="d-block w-100" alt="...">
+    </div>
+  <div class="carousel-item">
+      <img src="imagenes/11.jpeg" class="d-block w-100" alt="...">
+    </div>
+  <div class="carousel-item">
+      <img src="imagenes/12.jpeg" class="d-block w-100" alt="...">
+    </div>
+  <div class="carousel-item">
+      <img src="imagenes/13.jpeg" class="d-block w-100" alt="...">
+    </div>
+  <div class="carousel-item">
+      <img src="imagenes/14.jpeg" class="d-block w-100" alt="...">
+    </div>
+  <div class="carousel-item">
+      <img src="imagenes/15.jpeg" class="d-block w-100" alt="...">
+    </div>
+  <div class="carousel-item">
+      <img src="imagenes/16.jpeg" class="d-block w-100" alt="...">
+    </div>
+  <div class="carousel-item">
+      <img src="imagenes/17.jpeg" class="d-block w-100" alt="...">
+    </div>
+  <div class="carousel-item">
+      <img src="imagenes/18.jpeg" class="d-block w-100" alt="...">
+    </div>
+  <div class="carousel-item">
+      <img src="imagenes/19.jpeg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
-<script>
-  const flipBook = document.getElementById('flip-book');
-  const pages = document.querySelectorAll('.page');
-  let currentPage = 0;
-
-  flipBook.addEventListener('click', () => {
-    currentPage = (currentPage + 1) % pages.length;
-    showPage(currentPage);
-  });
-
-  function showPage(page) {
-    pages.forEach((page, index) => {
-      page.style.opacity = index === currentPage ? 1 : 0;
-    });
-  }
-</script>
-
+  <!-- Agregado el contenedor de scripts al final -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8a+5L2Ffr9e+MNJ8OWfs1b/faDZf/npZxAZDMM" crossorigin="anonymous"></script>
 </body>
 </html>
+
